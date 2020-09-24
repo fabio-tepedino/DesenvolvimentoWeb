@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js01_EStrutura.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utd-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+    <h3>Programa de Boas Vindas com concatenacao de campos</h3>
+
+    <form name="formConcat" action="" method="POST">
+        Digite o nome: <input type="text" name="f_name"/><br/>
+        Digite o sobrenome: <input type="text" name="f_sobrenome"/><br/>
+        <input type="button" name="btn_concat" value="concatenar" onclick="concatena()"/>
+        <input type="button" name="btn_cancela" value="cancelar"/>
+    </form>
+
+    <script language="JavaScript"> 
+        /* Definicao de variaveis*/
+        var js_nome;
+        var js_sobrenome;
+        var js_concat;
+
+        function concatena(){
+            js_nome = document.formConcat.f_name.value;
+            js_sobrenome = document.formConcat.f_sobrenome.value;
+
+            js_concat = js_nome + " " + js_sobrenome;
+
+            window.alert('Ola ' + js_concat);
+        }
+
+    
+    </script>
+
+</body>
+</html>

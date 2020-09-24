@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js03_funcao.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utd-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+    <h3>Somatorio de dois inteiros com canversao de dados</h3>
+
+    <form name="formConcat" action="" method="POST">
+        Digite o num 1: <input type="text" name="num1"/><br/>
+        Digite o num 2: <input type="text" name="num2"/><br/>
+        <input type="button" name="bt_somar" value="concatenar" onclick="somar()"/>
+        <input type="button" name="btn_cancela" value="cancelar"/>
+    </form>
+
+    <script language="JavaScript"> 
+        /* Definicao de variaveis*/
+        var num1;
+        var num2;
+        var soma;
+
+        function somar(){
+            num1 = parseFloat(document.formConcat.num1.value);
+            num2 = parseFloat(document.formConcat.num2.value);
+
+            soma = num1 + num2;
+
+            window.alert('Soma = ' + soma.toString());
+        }
+
+    
+    </script>
+
+</body>
+</html>
