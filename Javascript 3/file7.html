@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js_04.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utd-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+    <h3>get 2 numbers show crescent order</h3>
+
+    <form name="formConcat" action="" method="POST">
+        Digite o num 1: <input type="text" name="num1"/><br/>
+        Digite o num 2: <input type="text" name="num2"/><br/>
+        <input type="button" name="bt_somar" value="concatenar" onclick="somar()"/>
+        <input type="button" name="btn_cancela" value="cancelar"/>
+    </form>
+
+<script language="JavaScript"> 
+    /* Definicao de variaveis*/
+    var num1;
+    var num2;
+
+    function somar(){
+        num1 = parseFloat(document.formConcat.num1.value);
+        num2 = parseFloat(document.formConcat.num2.value);
+
+        document.write('numero 1 digitado = '+ num1);
+        document.write('<br>numero 2 digitado = '+ num2);
+
+        if(num1 < num2){
+            document.write('<br>Crescent order of the numbers: ' + num1 + ' ... ' + num2);
+        }else{
+            document.write('<br>Crescent order of the numbers: ' + num2 + ' ... ' + num1);
+        }
+
+        
+    }
+
+
+</script>
+
+</body>
+</html>
