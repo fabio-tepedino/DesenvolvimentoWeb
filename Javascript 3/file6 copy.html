@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>js_04.htm</title>
+<title>js_04_ifelse.htm</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utd-8">
 <meta charset="utf-8"/>
 </head>
 <body>
-    <h3>get 2 numbers show crescent order</h3>
-
-    <form name="formConcat" action="" method="POST">
-        Digite o num 1: <input type="text" name="num1"/><br/>
-        Digite o num 2: <input type="text" name="num2"/><br/>
-        <input type="button" name="bt_somar" value="concatenar" onclick="somar()"/>
-        <input type="button" name="btn_cancela" value="cancelar"/>
-    </form>
-
 <script language="JavaScript"> 
     /* Definicao de variaveis*/
-    var num1;
-    var num2;
-    var num3;
+    var js_n1;
+    var js_n2;
 
-    function somar(){
-        num1 = parseFloat(document.formConcat.num1.value);
-        num2 = parseFloat(document.formConcat.num2.value);
+    js_n1 = parseInt(windows.prompt('Informe o valor do primeiro numero: ', '00'));
+    js_n2 = parseInt(windows.prompt('Informe o valor do segundo numero: ', '00'));
 
-        document.write('numero 1 digitado = '+ num1);
-        document.write('<br>numero 2 digitado = '+ num2);
+    document.write('numero 1 digitado = ' + js_n1);
+    document.write('<br> numero 2 digitado = ' + js_n2);
 
-        if(num1 > num2){
-            num3 = num1;
-            num1 = num2;
-            num2 = num3;
-        }
-
-        document.write('<br>Crescent order of the numbers: ' + num1 + ' < ' + num2);
+    if(js_n1 < js_n2)
+    {
+        document.write('<p><b> classificacao em ordem crescente: </b>' + js_n1 + ' e ' + js_n2);
+    }
+    else
+    {
+        document.write('<p><b> classificacao em ordem crescente: </b>' + js_n2 + ' e ' + js_n1);
     }
 
 
