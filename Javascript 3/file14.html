@@ -14,6 +14,9 @@
     var js_sb;
     var js_sl;
 
+    do {
+
+
     js_qht = parseFloat(window.prompt('Informe a quantidade de horas trabalhadas/mes: (135 a 180)', '00'));
     js_vht = parseFloat(window.prompt('Informe o valor da hora trabablhada: (25 a 50)', '00'));
     js_inss = parseFloat(window.prompt('Informe o percentual de desconto do INSS: (5 a 15)', '00'));
@@ -67,8 +70,13 @@
                 document.write('... (<b>Salario insatisfatorio! </b> menor ou igual a 3000)');
             }
         }
+        document.write('<p>=========================================================');
     }
-    
+      
+
+    js_resposta = window.confirm('Deseja continuar ?');
+    }while (js_resposta == true);
+
 
 
 </script>
